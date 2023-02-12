@@ -28,7 +28,7 @@ public class ProjectTest {
             new ActivityScenarioRule<>(MainActivity.class);
 
     @Test
-    public void mainActivityTest() {
+    public void mainIntentTest() {
         ViewInteraction textView = onView(
                 allOf(withId(R.id.text_home), withText("This is home fragment"),
                         withParent(withParent(withId(R.id.nav_host_fragment_content_main))),
